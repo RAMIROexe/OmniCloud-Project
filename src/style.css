@@ -1,0 +1,138 @@
+/*General Styling*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.btn-my-dashboared {
+  display: inline-flex;
+  padding: 1rem 1.3125rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+
+  border-radius: 0.375rem;
+  border: 2px solid var(--French-Gray, #bebfc5);
+}
+
+.btn-get-started {
+  display: inline-flex;
+  padding: 1rem 1.3125rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+
+  border-radius: 0.375rem;
+  border: 2px solid Linear Gradient Yellow Red;
+}
+
+/* HEAD */
+
+h1 {
+  font-family: Roboto;
+  font-size: 6.6875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.13375rem;
+
+  background: linear-gradient(85deg, #40c9ff -17.96%, #e81cff 153.77%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.head-description {
+  margin-top: 1rem;
+
+  display: inline-flex;
+  flex-direction: column;
+  height: 5.125rem;
+  padding: 0.625rem;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.625rem;
+  flex-shrink: 0;
+}
+
+.head-description p {
+  width: 37.75rem;
+
+  color: #000;
+  font-family: Digital Sans Trial;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.02rem;
+}
+
+.head-btn-container {
+  margin: 0 auto;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Our Customers */
+.our-customers {
+  margin-top: 30rem;
+
+  display: flex;
+  width: 77.25rem;
+  padding: 8.75rem 0rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.125rem;
+
+  border-radius: 1.875rem;
+border: 4px solid var(--Linear-Gradient-Blue-Purple, #40C9FF);
+}
+
+.customer-figure {
+  display: flex;
+  padding: 0rem 1.375rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 3.125rem 8.875rem;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.customer-figure p {
+  width: 12.625rem;
+
+  color: #000;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.customer-figures {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+}
