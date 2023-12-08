@@ -136,3 +136,51 @@ border: 4px solid var(--Linear-Gradient-Blue-Purple, #40C9FF);
   display: flex;
   flex-direction: row;
 }
+/*Our Services*/
+
+.our-services {
+  margin-top: 30rem;
+}
+
+.our-services-description {
+  margin-top: 2rem;
+
+  display: flex;
+  width: 64rem;
+  padding: 1.625rem 0.8125rem;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.625rem;
+}
+
+.our-services-description p {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.our-services-container {
+  display: flex;
+  padding: 0rem 0.5625rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4.1875rem;
+  align-self: stretch;
+}
+
+.our-services-IaaS {
+  font-size: 10.66rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  background: var(
+    --Linear-Gradient-Blue-Purple,
+    linear-gradient(85deg, #40c9ff -17.96%, #e81cff 153.77%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
