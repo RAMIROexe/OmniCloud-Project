@@ -1,9 +1,5 @@
 <?php 
 
-//Prevent the default reloading
-if (isset($_POST['CPU'])) {
-  header('Location: index.php');
-}
 
 $CPU = $_POST['CPU'];
 $RAM = $_POST['RAM'];

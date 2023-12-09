@@ -318,6 +318,7 @@ h1 {
   display: flex;
   gap: 2rem;
   align-items: baseline;
+  padding: 1rem 1.5rem;
 }
 .provisioning-checkbox-label-container label {
   font-size: 1.25rem;
@@ -337,6 +338,61 @@ h1 {
   gap: 1.5rem;
 }
 
+.provisioning-section {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.provisioning-total-price-container p {
+  font-family: Inter;
+  font-size: 10.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  background: var(
+    --Linear-Gradient-Yellow-Red,
+    linear-gradient(88deg, #e9d022 -11.09%, #e60b09 122.28%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.confirm-button-container {
+  display: inline;
+  text-align: end;
+  margin: 3rem 0rem;
+}
+
+.confirm-button-container button  {
+  display: inline-flex;
+  padding: 1rem 1.3125rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+
+  border-radius: 0.375rem;
+
+  border: 2px solid var(--Linear-Gradient-Yellow-Red, #e9d022);
+
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.0375rem;
+
+  background: var(
+    --Linear-Gradient-Yellow-Red,
+    linear-gradient(88deg, #e9d022 -11.09%, #e60b09 122.28%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /*Dashbaored*/
 .dashboared-title {
   font-family: Inter;
@@ -353,4 +409,16 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.provisioning-total-price-container {
+  display: inline;
+  text-align: end;
+}
+
+.provisioning-bottom-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7rem;
+  padding: 4rem;
 }
