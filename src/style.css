@@ -336,3 +336,21 @@ h1 {
   flex-direction: column;
   gap: 1.5rem;
 }
+
+/*Dashbaored*/
+.dashboared-title {
+  font-family: Inter;
+  font-size: 3.2375rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.09713rem;
+
+  background: var(
+    --Linear-Gradient-Dark-Blue-to-Purple,
+    linear-gradient(89deg, #667eea -2.93%, #764ba2 111.13%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
