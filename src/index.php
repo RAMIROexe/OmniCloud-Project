@@ -1,3 +1,17 @@
+<?php 
+
+//Prevent the default reloading
+if (isset($_POST['CPU'])) {
+  header('Location: index.php');
+}
+
+$CPU = $_POST['CPU'];
+$RAM = $_POST['RAM'];
+$SSD = $_POST['SSD'];
+
+$totalPrice = $CPU * 5 + $RAM * 5 + $SSD * 10;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -79,34 +93,43 @@
               </p>
             </div>
             <div class="our-prices-calculater">
-              <div class="our-prices-text-fields">
+              <form method="post" action="index.php" class="our-prices-text-fields">
                 <!--First Text Field-->
                 <div class="our-prices-text-field">
                   <div class="our-prices-text-field-container">
                     <label>CPU</label>
-                    <input type="number" placeholder="1" />
+                    <input type="number" name="CPU" placeholder="1"/>
                   </div>
                   <p>5 CHF / Core</p>
                 </div>
                 <!--Second Text Field-->
                 <div class="our-prices-text-field">
                   <div class="our-prices-text-field-container">
-                    <label>CPU</label>
-                    <input type="number" placeholder="1" />
+                    <label>RAM</label>
+                    <input type="number" name="RAM" placeholder="1" />
                   </div>
                   <p>5 CHF / Core</p>
                 </div>
                 <!--Third Text Field-->
                 <div class="our-prices-text-field">
                   <div class="our-prices-text-field-container">
-                    <label>CPU</label>
-                    <input type="number" placeholder="1" />
+                    <label>SSD</label>
+                    <input type="number" name="SSD" placeholder="1" />
                   </div>
                   <p>5 CHF / Core</p>
                 </div>
-              </div>
+                <!--Submit Button-->
+                <div>
+                  <button class="our-prices-submit-button" type="submit">
+                    Calculate
+                  </button>
+                </div>
+              </form>
               <div class="our-prices-charge">
-                <p>30 .-</p>
+                <p>
+                <?php echo $totalPrice ?>
+                .-
+              </p>
               </div>
             </div>
           </div>
