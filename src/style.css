@@ -336,7 +336,6 @@ input[type="number"]:focus {
 }
 
 .cta-button {
-
   font-size: 10rem;
   font-style: normal;
   font-weight: 600;
@@ -486,4 +485,32 @@ input[type="number"]:focus {
   flex-direction: column;
   margin-top: 7rem;
   padding: 4rem;
+}
+
+.confirm-button-container input:hover {
+  cursor: pointer;
+}
+
+.confirm-button-container input {
+  display: inline-flex;
+  padding: 1rem 1.3125rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+
+  background: var(
+    --Linear-Gradient-Yellow-Red,
+    linear-gradient(88deg, #e9d022 -11.09%, #e60b09 122.28%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.02625rem;
+
+  border: none;
 }

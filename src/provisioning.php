@@ -29,10 +29,21 @@ $ssdOptions = array(
 );
 
 
-// Get the CPU, RAM, and SSD from POST
-$CPU = $_POST['CPU'];
-$RAM = $_POST['RAM'];
-$SSD = $_POST['SSD'];
+$CPU = "";
+$RAM = "";
+$SSD = "";
+
+if (isset($_POST['submit'])) {
+  $CPU = $_POST['CPU'];
+  $RAM = $_POST['RAM'];
+  $SSD = $_POST['SSD'];
+  echo $CPU;
+  echo $RAM;
+  echo $SSD;
+}
+
+
+
 
 // Convert CPU, RAM, and SSD to integers
 $CPU = (int) $CPU;
@@ -99,7 +110,7 @@ $totalPrice = $CPU * 5 + $RAM * 5 + $SSD * 10;
           <p><?php echo $totalPrice; ?> CHF</p>
       </div>
       <div class="confirm-button-container">
-        <button type="submit">Confirm</button>
+        <input type="submit" name="submit"></input>
       </div>
     </section>
        

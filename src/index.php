@@ -4,7 +4,7 @@ $CPU = "";
 $RAM = "";
 $SSD = "";
 
-if (isset($_POST['submit'])) {
+if (isset($_POST['Calculate'])) {
   $CPU = $_POST['CPU'];
   $RAM = $_POST['RAM'];
   $SSD = $_POST['SSD'];
