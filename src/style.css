@@ -367,7 +367,7 @@ h1 {
   margin: 3rem 0rem;
 }
 
-.confirm-button-container button  {
+.confirm-button-container button {
   display: inline-flex;
   padding: 1rem 1.3125rem;
   justify-content: center;
@@ -403,8 +403,8 @@ h1 {
   letter-spacing: 0.09713rem;
 
   background: var(
-    --Linear-Gradient-Dark-Blue-to-Purple,
-    linear-gradient(89deg, #667eea -2.93%, #764ba2 111.13%)
+    --Linear-Gradient-Red-to-Orange,
+    linear-gradient(89deg, #f3696e -1.7%, #f8a902 103.62%)
   );
   background-clip: text;
   -webkit-background-clip: text;
