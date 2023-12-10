@@ -1,9 +1,19 @@
 <?php 
 
+$CPU = "";
+$RAM = "";
+$SSD = "";
 
-$CPU = $_POST['CPU'];
-$RAM = $_POST['RAM'];
-$SSD = $_POST['SSD'];
+if (isset($_POST['submit'])) {
+  $CPU = $_POST['CPU'];
+  $RAM = $_POST['RAM'];
+  $SSD = $_POST['SSD'];
+}
+
+$CPU = (int) $CPU;
+$RAM = (int) $RAM;
+$SSD = (int) $SSD;
+
 
 $totalPrice = $CPU * 5 + $RAM * 5 + $SSD * 10;
 
@@ -27,7 +37,7 @@ $messages = array(
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css"<?php echo time(); ?>" />
     <title>Document</title>
   </head>
   <body>
@@ -42,7 +52,7 @@ $messages = array(
               metus. Et egestas a turpis sed platea.
             </p>
             <div class="head-btn-container">
-              <a href="dashboared.php" class="btn-my-dashboared"
+              <a href="dashboared.php" class="l"
                 >Go to Dashboared</a
               >
               <a href="provisioning.php" class="btn-get-started"
@@ -93,7 +103,7 @@ $messages = array(
               </p>
             </div>
             <div class="our-prices-calculater">
-              <form method="post" action="index.php" class="our-prices-text-fields">
+              <form method="post" action="" class="our-prices-text-fields">
                 <!--First Text Field-->
                 <div class="our-prices-text-field">
                   <div class="our-prices-text-field-container">
@@ -106,7 +116,7 @@ $messages = array(
                 <div class="our-prices-text-field">
                   <div class="our-prices-text-field-container">
                     <label>RAM</label>
-                    <input type="number" name="RAM" placeholder="1" />
+                    <input type="number" name="RAM" placeholder="1" min=1 max=4/>
                   </div>
                   <p>5 CHF / Core</p>
                 </div>
@@ -120,9 +130,8 @@ $messages = array(
                 </div>
                 <!--Submit Button-->
                 <div>
-                  <button class="our-prices-submit-button" type="submit">
-                    Calculate
-                  </button>
+                  <input class="our-prices-submit-button" type="submit" name="Calculate">
+                  </input>
                 </div>
               </form>
               <div class="our-prices-charge">
@@ -135,10 +144,9 @@ $messages = array(
           </div>
         </section>
         <div class="cta-button-container">
-          <button class="cta-button">Get Started</button>
+          <a href="provisioning.php" class="cta-button">Get Started</a>
         </div>
       </div>
     </main>
-    <script src="script.js"></script>
   </body>
 </html>
