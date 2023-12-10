@@ -6,6 +6,20 @@ $RAM = $_POST['RAM'];
 $SSD = $_POST['SSD'];
 
 $totalPrice = $CPU * 5 + $RAM * 5 + $SSD * 10;
+
+//Images Name
+$images = array(
+  "Google" => "logos/Google.png",
+  "Meta" => "logos/Meta.png",
+  "X" => "logos/X.png",
+);
+
+$messages = array(
+  "Google" => "The best cloud service provider to host our Indian Call Centers.",
+  "Meta" => "I hope they don't steal my data.",
+  "X" => "Freedom of speech is a human right.",
+);
+
 ?>
 
 <!DOCTYPE html>
@@ -28,10 +42,10 @@ $totalPrice = $CPU * 5 + $RAM * 5 + $SSD * 10;
               metus. Et egestas a turpis sed platea.
             </p>
             <div class="head-btn-container">
-              <a href="dashboared.html" class="btn-my-dashboared"
+              <a href="dashboared.php" class="btn-my-dashboared"
                 >Go to Dashboared</a
               >
-              <a href="provisioning.html" class="btn-get-started"
+              <a href="provisioning.php" class="btn-get-started"
                 >Get Started</a
               >
             </div>
@@ -40,27 +54,17 @@ $totalPrice = $CPU * 5 + $RAM * 5 + $SSD * 10;
         <section class="our-customers">
           <h2>Our Customers</h2>
           <div class="customer-figures">
-            <figure class="customer-figure">
-              <img src="../public/logos/Meta.png" alt="Meta logo" />
-              <p>
-                “The best cloud service provider to host our Indian Call
-                Centers.”
-              </p>
-            </figure>
-            <figure class="customer-figure">
-              <img src="../public/logos/Meta.png" alt="Meta logo" />
-              <p>
-                “The best cloud service provider to host our Indian Call
-                Centers.”
-              </p>
-            </figure>
-            <figure class="customer-figure">
-              <img src="../public/logos/Meta.png" alt="Meta logo" />
-              <p>
-                “The best cloud service provider to host our Indian Call
-                Centers.”
-              </p>
-            </figure>
+            
+              <?php 
+                //Loop through the data and make a reusable component
+                foreach($images as $key => $value) {
+                  echo "<figure class='customer-figure'>";
+                  echo "<img src='" . $value . "' alt='" . $key . " logo' />";
+                  echo "<p>" . $messages[$key] . "</p>";
+                  echo "</figure>";
+                }
+              ?>
+    
           </div>
         </section>
         <section class="our-services">
